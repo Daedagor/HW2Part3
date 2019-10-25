@@ -45,7 +45,7 @@
 */
 
 /*
-This code should loop a few times and produce
+This code should loop a few times following pointers and print off the result
 */
 
 
