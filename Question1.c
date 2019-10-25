@@ -28,6 +28,11 @@ retn
 _main endp
 */
 
+/*
+This code should multiply and subtract, and then print off the results, and I believe it will result in 12.
+
+*/
+
 #include <stdio.h>
 int main(void){
     // Your code here!
