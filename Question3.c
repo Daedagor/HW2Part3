@@ -8,6 +8,7 @@
 .text:00401509 call ___main
 .text:0040150E mov dword ptr [esp+1Ch], 64h
 .text:00401516 jmp loc_4015D6
+
 .text:0040151B ; ---------------------------------------------------------------------------
 .text:0040151B
 .text:0040151B loc_40151B: ; CODE XREF: _main+DE↓j
@@ -63,6 +64,8 @@
 .text:004015B5 add eax, edx
 .text:004015B7 cmp eax, [esp+1Ch]
 .text:004015BB jnz short loc_4015D1
+
+
 .text:004015BD mov eax, [esp+1Ch]
 .text:004015C1 mov [esp+4], eax
 .text:004015C5 mov dword ptr [esp], offset aD ; "%d "
@@ -71,13 +74,19 @@
 .text:004015D1 loc_4015D1: ; CODE XREF: _main+BB↑j
 .text:004015D1 add dword ptr [esp+1Ch], 1
 .text:004015D6
+
 .text:004015D6 loc_4015D6: ; CODE XREF: _main+16↑j
 .text:004015D6 cmp dword ptr [esp+1Ch], 3E7h
 .text:004015DE jle loc_40151B
+
 .text:004015E4 mov eax, 0
 .text:004015E9 leave
 .text:004015EA retn
 .text:004015EA _main endp
+*/
+
+/*
+This should compare the value to that of the pointer. and then it loops through based on certain conditions.
 */
 
 #include <stdio.h>
